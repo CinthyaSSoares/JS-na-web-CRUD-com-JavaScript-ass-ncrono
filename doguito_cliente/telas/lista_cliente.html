@@ -54,7 +54,18 @@
         </div>
     </main>
 </body> 
-<script src="../service/Cliente-Service.js"></script>
+<script type="module" src="../Controle.js/ListaClientesControle.js"></script>
+
+<!--
+    
+    Simulando servidor com:
+    npx json-server --watch db.json
+
+    Problema com o CORS:
+    'npm install -g browser-sync ' depois 
+    ' browser-sync start --server --file . --host --port 5000 --startPath /telas/lista_cliente.html ' no terminal
+
+-->
 
 </html>
 
