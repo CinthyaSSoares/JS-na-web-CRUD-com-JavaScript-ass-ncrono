@@ -30,10 +30,9 @@ const listaClientes = () =>  {
             }
             http.send();
         });    
-        console.log(promise);
     return promise; 
 }
-listaClientes();
+listaClientes()
 .then( data => {
     data.forEach(elemento => {
     tabela.appendChild(criaNovaLinha(elemento.nome, elemento.email))
