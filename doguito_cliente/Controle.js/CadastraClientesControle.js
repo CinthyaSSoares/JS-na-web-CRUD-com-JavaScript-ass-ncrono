@@ -1,6 +1,6 @@
-import { clienteService } from "../service/ClienteService.js"
+import { clienteService } from '../service/ClienteService.js'
 
-const formulario = document.querySelector('[data-form]')
+const formulario = document.querySelector('[data-form]');
 
 formulario.addEventListener('submit', (evento)=> {
     evento.preventDefault() //previnir de enviar o form sem terminar
@@ -9,6 +9,6 @@ formulario.addEventListener('submit', (evento)=> {
 
     clienteService.criaCliente(nome, email)
     .then(() => {
-        window.location.href = "../telas/cadastro_concluido.html"
+        window.location.href = '../telas/cadastro_concluido.html'
     })
 })
